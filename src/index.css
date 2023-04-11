@@ -1,0 +1,75 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  padding: 10px 12px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+
+.tree-node {
+  position: relative;
+}
+
+.tree-node::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  width: 10px;
+  height: 2px;
+  background-color: #5d5d5d4a;
+}
+
+.tree-node > div::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  width: 2px;
+  height: calc(100% - 35px);
+  background-color: #5d5d5d4a;
+}
+
+.tree-node > div:last-child::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: -15px;
+  width: 10px;
+  height: 2px;
+  background-color: #5d5d5d4a;
+}

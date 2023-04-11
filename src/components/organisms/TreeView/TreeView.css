@@ -1,0 +1,15 @@
+  
+  .tree-view{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .tree{
+    width: 85%;
+    height: auto;
+  }
